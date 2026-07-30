@@ -18,7 +18,7 @@ projects where automation must save manual work without hiding operational risk.
 
 | Project | What it demonstrates | Proof |
 | --- | --- | --- |
-| [Flowcasebook](https://github.com/kanuwrld/flowcasebook) | Turns n8n exports into sanitized case studies, Mermaid diagrams, and privacy reports. Local processing, zero runtime dependencies. | [v0.1.0 release](https://github.com/kanuwrld/flowcasebook/releases/tag/v0.1.0) |
+| [Flowcasebook](https://github.com/kanuwrld/flowcasebook) | Turns n8n exports into sanitized case studies, Mermaid diagrams, and privacy reports with local custom redaction policies. Zero runtime dependencies. | [v0.2.0 release](https://github.com/kanuwrld/flowcasebook/releases/tag/v0.2.0) |
 | [KLYSELZ Automation Platform](https://github.com/kanuwrld/klyselz-automation-platform) | DACH-focused lead intake, CRM, and client-delivery platform with secure CI/CD. | [Live application](https://klyselz-flow-prod.vercel.app) |
 | [RepoReady](https://github.com/kanuwrld/repoready) | Zero-dependency Python repository-readiness auditor and GitHub Action. | [Source and usage](https://github.com/kanuwrld/repoready#readme) |
 | [Fahrklar Klasse B](https://github.com/kanuwrld/fahrklar-klasse-b) | Mobile-first German driving-test trainer with DE/RU learning flow. | [Live application](https://fahrklar-klasse-b.vercel.app) |
