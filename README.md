@@ -1,4 +1,4 @@
-# Stani Kanu
+# kanu
 
 ### AI automation and product systems for business
 
