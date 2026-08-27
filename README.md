@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="./assets/profile-hero.jpg" width="100%" alt="KANU — AI automation, systems, and product" />
-</p>
-
-<p align="center">
   <a href="https://klyselz-flow-prod.vercel.app"><img alt="Live portfolio" src="https://img.shields.io/badge/LIVE_PORTFOLIO-111111?style=for-the-badge&logo=vercel&logoColor=white" /></a>
   <a href="https://github.com/kanuwrld/flowcasebook"><img alt="Flowcasebook" src="https://img.shields.io/badge/FLOWCASEBOOK-111111?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://github.com/kanuwrld/repoready"><img alt="RepoReady" src="https://img.shields.io/badge/REPOREADY-111111?style=for-the-badge&logo=python&logoColor=white" /></a>
