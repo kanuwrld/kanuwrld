@@ -1,7 +1,8 @@
 <p align="center">
   <a href="https://klyselz-flow-prod.vercel.app"><img alt="Live portfolio" src="https://img.shields.io/badge/LIVE_PORTFOLIO-111111?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://github.com/kanuwrld/flowcasebook"><img alt="Flowcasebook" src="https://img.shields.io/badge/FLOWCASEBOOK-111111?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/kanuwrld/repoready"><img alt="RepoReady" src="https://img.shields.io/badge/REPOREADY-111111?style=for-the-badge&logo=python&logoColor=white" /></a>
+  <a href="https://github.com/kanuwrld/agentproof"><img alt="AgentProof" src="https://img.shields.io/badge/AGENTPROOF-111111?style=for-the-badge&logo=githubactions&logoColor=white" /></a>
+  <a href="https://github.com/kanuwrld/reviewgate"><img alt="ReviewGate" src="https://img.shields.io/badge/REVIEWGATE-111111?style=for-the-badge&logo=typescript&logoColor=white" /></a>
+  <a href="https://github.com/kanuwrld/draftops"><img alt="DraftOps" src="https://img.shields.io/badge/DRAFTOPS-111111?style=for-the-badge&logo=python&logoColor=white" /></a>
   <a href="https://github.com/kanuwrld/kanuwrld/discussions"><img alt="Start a project discussion" src="https://img.shields.io/badge/LET'S_TALK-111111?style=for-the-badge&logo=githubsponsors&logoColor=white" /></a>
 </p>
 
@@ -36,6 +37,36 @@
     </td>
   </tr>
 </table>
+
+<h2 align="center">Open-source AI automation toolkit</h2>
+
+<p align="center">
+  Test model outputs → gate external actions → prepare privacy-safe drafts.
+</p>
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/kanuwrld/agentproof">AgentProof</a></h3>
+      <p>Regression contracts for recorded AI outputs: structure, text, regex, secret patterns, latency, and cost.</p>
+      <p><a href="https://github.com/kanuwrld/agentproof/releases/tag/v0.1.0"><img alt="AgentProof v0.1.0" src="https://img.shields.io/badge/RELEASE-v0.1.0-111111?style=flat-square" /></a></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/kanuwrld/reviewgate">ReviewGate</a></h3>
+      <p>Deny-by-default policies and named human approval between AI agents and external actions.</p>
+      <p><a href="https://github.com/kanuwrld/reviewgate/releases/tag/v0.1.0"><img alt="ReviewGate v0.1.0" src="https://img.shields.io/badge/RELEASE-v0.1.0-111111?style=flat-square" /></a></p>
+    </td>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/kanuwrld/draftops">DraftOps</a></h3>
+      <p>PII-aware support triage that stops at reviewed drafts and never auto-sends a message.</p>
+      <p><a href="https://github.com/kanuwrld/draftops/releases/tag/v0.1.0"><img alt="DraftOps v0.1.0" src="https://img.shields.io/badge/RELEASE-v0.1.0-111111?style=flat-square" /></a></p>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  If one of these tools is useful, star the repo you want me to grow next.
+</p>
 
 <h2 align="center">Selected systems</h2>
 
