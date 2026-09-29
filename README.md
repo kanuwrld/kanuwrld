@@ -1,5 +1,3 @@
-# Stanislav
-
 **Full-Stack Developer · Web, Mobile & Automation**
 
 I build products from interface and API to database, integrations, and deployment.
