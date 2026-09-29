@@ -20,6 +20,8 @@ Open to **Full-Stack / Software Engineer** roles · [Get in touch](https://githu
 - **[Fahrklar](https://github.com/kanuwrld/fahrklar-klasse-b)** — bilingual driving-test trainer; React + Next.js. [Demo](https://fahrklar-klasse-b.vercel.app)
 - **[Flowcasebook](https://github.com/kanuwrld/flowcasebook)** — CLI for n8n workflow redaction and diagrams; TypeScript.
 
+**Open source:** [LTX-Video for macOS #80](https://github.com/james-see/ltx-video-mac/pull/80) — configurable model cache directory; merged upstream.
+
 <details>
 <summary>More tools & project experience</summary>
 
