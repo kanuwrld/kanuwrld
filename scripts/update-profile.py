@@ -44,5 +44,5 @@ def render():
 
 if __name__ == "__main__":
     svg = render()
-    (ROOT / "assets" / "profile.svg").write_text(svg, encoding="utf-8")
+    (ROOT / "assets" / "robot.svg").write_text(svg, encoding="utf-8")
     print("Rendered animated profile illustration")
