@@ -51,43 +51,34 @@ def render(data):
     values = [
         ("public repos", data["public_repositories"]),
         ("merged PRs", data["public_merged_pull_requests"]),
-        ("stars earned", data["stars_on_original_repositories"]),
-        ("followers", data["followers"]),
+        ("stars", data["stars_on_original_repositories"]),
     ]
     rows = "\n".join(
-        f'<text x="40" y="{190+i*38}" fill="#b9f36a" font-size="27" font-weight="700">+{value:02d}</text>'
-        f'<text x="130" y="{190+i*38}" fill="#d3d9d0" font-size="17">{escape(label)}</text>'
+        f'<text x="582" y="{155+i*110}" fill="#b9f36a" font-size="{min(66, 330 // max(1, len(format(value, ","))))}" font-weight="700" letter-spacing="-2">{value:,}</text>'
+        f'<text x="584" y="{190+i*110}" fill="#9da7b3" font-size="28">{escape(label)}</text>'
         for i, (label, value) in enumerate(values)
     )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="840" height="458" viewBox="0 0 840 458" role="img" aria-labelledby="title desc">
-<title id="title">@kanuwrld — ship happens</title>
-<desc id="desc">{data['public_repositories']} public repositories, {data['public_merged_pull_requests']} merged public pull requests, {data['stars_on_original_repositories']} stars on original repositories and {data['followers']} followers. A pixel developer dances behind a laptop. Sleep: 404. Social life: not configured.</desc>
+<title id="title">@kanuwrld</title>
+<desc id="desc">A dancing pixel robot. {data['public_repositories']} public repositories, {data['public_merged_pull_requests']} merged public pull requests, and {data['stars_on_original_repositories']} stars on original repositories. Public GitHub data updated {escape(data['updated_at'])} UTC. Stars exclude forks.</desc>
 <style>
  text {{ font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace; }}
  .groove {{ animation: groove 1.4s steps(2,end) infinite; transform-origin: 628px 300px; }}
  .blink {{ animation: blink 3.2s steps(1,end) infinite; }}
- .cursor {{ animation: cursor 1s steps(1,end) infinite; }}
  .spark {{ animation: spark 1.4s steps(2,end) infinite; }}
  @keyframes groove {{ 0%,100% {{ transform: rotate(-6deg) translateY(0); }} 50% {{ transform: rotate(6deg) translateY(-8px); }} }}
  @keyframes blink {{ 0%,92%,100% {{ opacity:1; }} 94%,98% {{ opacity:0; }} }}
- @keyframes cursor {{ 0%,49% {{ opacity:1; }} 50%,100% {{ opacity:0; }} }}
  @keyframes spark {{ 0%,100% {{ opacity:.3; }} 50% {{ opacity:1; }} }}
- @media (prefers-reduced-motion: reduce) {{ .groove,.blink,.cursor,.spark {{ animation:none; }} }}
+ @media (prefers-reduced-motion: reduce) {{ .groove,.blink,.spark {{ animation:none; }} }}
 </style>
 <rect width="840" height="458" rx="12" fill="#0d1117"/>
 <rect x=".5" y=".5" width="839" height="457" rx="12" fill="none" stroke="#30363d"/>
-<path d="M0 50H840M32 388H808" stroke="#30363d"/>
+<path d="M0 50H840" stroke="#30363d"/>
 <circle cx="28" cy="25" r="5" fill="#ff7b72"/><circle cx="46" cy="25" r="5" fill="#d29922"/><circle cx="64" cy="25" r="5" fill="#b9f36a"/>
-<text x="86" y="30" fill="#8b949e" font-size="12">kanuwrld@earth: ~/building</text>
-<text x="805" y="30" text-anchor="end" fill="#8b949e" font-size="12">cold binary</text>
-<text x="38" y="108" fill="#f0f6fc" font-size="37" font-weight="800" letter-spacing="-1.4">ship happens.</text>
-<text x="40" y="137" fill="#8b949e" font-size="13">full-stack dev. part-time sleep enthusiast.</text>
+<text x="805" y="32" text-anchor="end" fill="#c9d1d9" font-size="18">@kanuwrld</text>
 {rows}
-<text x="40" y="342" fill="#ff7b72" font-size="16">− sleep: 404</text>
-<text x="40" y="368" fill="#ff7b72" font-size="16">− social life: not configured</text>
-<path d="M409 168V364" stroke="#30363d" stroke-dasharray="3 7"/>
-<text x="621" y="127" text-anchor="middle" fill="#8b949e" font-size="12">ME AFTER ONE GREEN CHECK</text>
-<g class="spark" fill="#b9f36a"><path d="M470 179h8v8h-8zM462 187h8v8h-8zM478 187h8v8h-8zM470 195h8v8h-8z"/><path d="M750 249h8v8h-8zM742 257h8v8h-8zM758 257h8v8h-8zM750 265h8v8h-8z"/></g>
+<g transform="translate(-777.4 -199) scale(1.7)">
+<g class="spark" fill="#b9f36a"><path d="M500 179h6v6h-6zM494 185h6v6h-6zM506 185h6v6h-6zM500 191h6v6h-6z"/><path d="M750 249h6v6h-6zM744 255h6v6h-6zM756 255h6v6h-6zM750 261h6v6h-6z"/></g>
 <g class="groove" shape-rendering="crispEdges">
 <path d="M568 166h108v12h12v96H556v-96h12z" fill="#b9f36a"/>
 <path d="M568 166h108v12H568zM556 178h12v24h-12zM676 178h12v24h-12z" fill="#e2ffb7"/>
@@ -101,9 +92,7 @@ def render(data):
 <path d="M531 300h182l-14 52H545z" fill="#21262d" stroke="#484f58" stroke-width="2"/>
 <path d="M519 352h206v8H519z" fill="#484f58"/>
 <text x="622" y="333" text-anchor="middle" fill="#b9f36a" font-size="18" font-weight="bold">&gt;_</text>
-<text x="40" y="419" fill="#b9f36a" font-size="15">$ git push &amp;&amp; touch grass</text><rect class="cursor" x="312" y="405" width="9" height="17" fill="#b9f36a"/>
-<text x="40" y="442" fill="#8b949e" font-size="10">PUBLIC GITHUB DATA · {escape(data['updated_at'])} UTC · THE RED LINES ARE JOKES</text>
-<text x="802" y="419" text-anchor="end" fill="#8b949e" font-size="11">exit code: hopefully 0</text>
+</g>
 </svg>'''
 
 
