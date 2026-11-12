@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="458" viewBox="0 0 840 458" role="img" aria-labelledby="title desc">
-<title id="title">@kanuwrld</title>
-<desc id="desc">A dancing pixel robot. 14 public repositories, 18 merged public pull requests, and 4 stars on original repositories. Public GitHub data updated 2026-11-12 UTC. Stars exclude forks.</desc>
+<title id="title">Dancing pixel robot</title>
+<desc id="desc">A lime-green pixel robot dancing behind a laptop, surrounded by blinking sparks.</desc>
 <style>
  text { font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace; }
  .groove { animation: groove 1.4s steps(2,end) infinite; transform-origin: 628px 300px; }
@@ -15,11 +15,7 @@
 <rect x=".5" y=".5" width="839" height="457" rx="12" fill="none" stroke="#30363d"/>
 <path d="M0 50H840" stroke="#30363d"/>
 <circle cx="28" cy="25" r="5" fill="#ff7b72"/><circle cx="46" cy="25" r="5" fill="#d29922"/><circle cx="64" cy="25" r="5" fill="#b9f36a"/>
-<text x="805" y="32" text-anchor="end" fill="#c9d1d9" font-size="18">@kanuwrld</text>
-<text x="582" y="155" fill="#b9f36a" font-size="66" font-weight="700" letter-spacing="-2">14</text><text x="584" y="190" fill="#9da7b3" font-size="28">public repos</text>
-<text x="582" y="265" fill="#b9f36a" font-size="66" font-weight="700" letter-spacing="-2">18</text><text x="584" y="300" fill="#9da7b3" font-size="28">merged PRs</text>
-<text x="582" y="375" fill="#b9f36a" font-size="66" font-weight="700" letter-spacing="-2">4</text><text x="584" y="410" fill="#9da7b3" font-size="28">stars</text>
-<g transform="translate(-777.4 -199) scale(1.7)">
+<g transform="translate(-637.4 -199) scale(1.7)">
 <g class="spark" fill="#b9f36a"><path d="M500 179h6v6h-6zM494 185h6v6h-6zM506 185h6v6h-6zM500 191h6v6h-6z"/><path d="M750 249h6v6h-6zM744 255h6v6h-6zM756 255h6v6h-6zM750 261h6v6h-6z"/></g>
 <g class="groove" shape-rendering="crispEdges">
 <path d="M568 166h108v12h12v96H556v-96h12z" fill="#b9f36a"/>

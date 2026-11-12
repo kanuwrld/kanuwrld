@@ -1,38 +1,27 @@
-name: Refresh public profile
+name: Validate profile illustration
 
 on:
-  schedule:
-    - cron: '17 7 * * *'
   workflow_dispatch:
   push:
     paths:
       - scripts/update-profile.py
+      - assets/profile.svg
       - .github/workflows/profile.yml
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: profile-card
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
-      - name: Render public statistics
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Render illustration
         run: python3 scripts/update-profile.py
-      - name: Publish changed card
-        run: |
-          git add assets/profile.svg assets/stats.json
-          if git diff --cached --quiet; then
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'chore(profile): refresh public stats'
-          git push
+      - name: Check generated illustration
+        run: git diff --exit-code -- assets/profile.svg
